@@ -1,0 +1,66 @@
+<html>
+<head>
+    
+    <title>Hover to Show Image</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        
+        #hoverText {
+            color: #007BFF;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #hoverText:hover {
+            text-decoration: underline;
+        }
+
+       
+        #hoverImage {
+            display: none; 
+            margin-top: 10px;
+            width: 150px;
+            height: auto;
+        
+ #hoverImage2 {
+            display: none; 
+            margin-top: 10px;
+            width: 150px;
+            height: auto;
+}
+    </style>
+    <script>
+        
+        function showImage() {
+            document.getElementById('hoverImage').style.display = 'block';  
+        }
+
+       
+        function hideImage() {
+            document.getElementById('hoverImage').style.display = 'none'; 
+        }
+    </script>
+</head>
+<body>
+
+    
+
+   
+    <p id="" onmouseover="showImage()" onmouseout="hideImage()">
+        Hover over this text to see the image.
+    </p>
+
+<img id="hoverImage2" src="drake2.jpg" alt="Placeholder Image">
+
+     <img id="hoverImage" src="Drake.jpg" alt="Placeholder Image">
+
+</body>
+</html>
